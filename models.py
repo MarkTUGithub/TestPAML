@@ -1,18 +1,3 @@
-"""
-Tutorial Machine Learning in Solid Mechanics (WiSe 22/23)
-Task 1: Feed-Forward Neural Networks
-
-==================
-
-Authors: Dominik K. Klein, Henrik Hembrock, Jonathan Stollberg
-         
-08/2022
-"""
-
-
-
-
-
 import tensorflow as tf
 from tensorflow.keras import layers
 from tensorflow.keras.constraints import non_neg
