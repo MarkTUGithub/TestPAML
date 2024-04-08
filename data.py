@@ -1,20 +1,7 @@
-"""
-Tutorial Machine Learning in Solid Mechanics (WiSe 22/23)
-Task 1: Feed-Forward Neural Networks
-
-==================
-
-Authors: Dominik K. Klein, Henrik Hembrock, Jonathan Stollberg
-         
-08/2022
-"""
-  
 import numpy as np
 from tensorflow.keras import layers
 
 #%% data generation functions
-
-
 
 def f2_data():
     """
@@ -48,3 +35,4 @@ class F2(layers.Layer):
     """
     def __call__(self, x, y):
         return x**2 + 0.5 + y**2, np.hstack([2*x, y])
+
