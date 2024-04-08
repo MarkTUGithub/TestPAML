@@ -2,7 +2,7 @@
 import matplotlib.pyplot as plt
 from matplotlib import cm
 import numpy as np
-from data import f2_data
+from TestPAML.data import f2_data
  
 def plot_f2(model, history):
     xs, ys, zs, grad, xs_c, ys_c, zs_c, grad_c = f2_data()
