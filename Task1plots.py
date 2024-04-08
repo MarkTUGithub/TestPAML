@@ -1,28 +1,9 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Tue Nov  8 16:55:38 2022
-
-@author: jonat
-"""
-
-"""
-Tutorial Machine Learning in Solid Mechanics (WiSe 22/23)
-Task 1: Feed-Forward Neural Networks
-
-==================
-
-Authors: Dominik K. Klein, Henrik Hembrock, Jonathan Stollberg
-         
-08/2022
-"""
-
 import matplotlib.pyplot as plt
 from matplotlib import cm
 import numpy as np
 from data import f2_data
-
-
-    
+ 
 def plot_f2(model, history):
     xs, ys, zs, grad, xs_c, ys_c, zs_c, grad_c = f2_data()
     
@@ -49,7 +30,6 @@ def plot_f2(model, history):
     plt.xlabel('x')
     plt.ylabel('y')
     ax2.set_zlabel('$f_1$')
-
 
         
     zs_model = model.predict(np.hstack((xs, ys)))[1][:,0]
